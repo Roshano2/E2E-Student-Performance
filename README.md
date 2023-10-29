@@ -2,6 +2,7 @@
 
 setup.py -> builds the application as a package itself
 the SRC folder behaves as a package
+(basically a python script to ensure that the program is installed correctly iwth the aid of pip or we can use this to install any module without having to call setup.py directly)
 
 requirements.txt -> takes the mentioned packages in the file and installs when the setup.py is installed
 
