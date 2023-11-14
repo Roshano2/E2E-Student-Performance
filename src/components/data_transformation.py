@@ -23,6 +23,10 @@ from dataclasses import dataclass
 class DataTransformationConfig:
     preprocessor_obj_file_path=os.path.join('artifacts',"proprocessor.pkl")
 
+    #pkl files are used to save and load models for reusing purpose without retraining from scratch
+    #so this preprocessor pkl file has the transformation functions saved in it
+    #serializes the model and stores as binary file
+    
 class DataTransformation:
     def __init__(self):
         self.data_transformation_config=DataTransformationConfig()

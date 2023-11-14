@@ -23,6 +23,9 @@ from src.utils import save_object,evaluate_models
 @dataclass
 class ModelTrainerConfig:
     trained_model_file_path = os.path.join("artifacts","model.pkl")
+   #pkl files are used to save and load models for reusing purpose without retraining from scratch
+    #so this preprocessor pkl file has the trained model with trained dataset functions saved in it
+    #serializes the model and stores as binary file 
 
 class ModelTrainer:
     def __init__(self):
